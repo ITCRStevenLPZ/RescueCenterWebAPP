@@ -1,0 +1,280 @@
+* {
+  box-sizing: border-box;
+}
+
+.buttonMenu {
+  height: 60px;
+  width: 100px;
+}
+
+.buttonMainMenu {
+  height: 100px;
+  width: 150px;
+  text-align: center;
+  color: rgb(0, 92, 15);
+  text-shadow: 0.1em 0.1em 0 rgb(217, 255, 0);
+}
+
+button {
+  display: inline-block;
+  height: 134px;
+  padding: 0;
+  margin: 0;
+  vertical-align: top;
+  width: 104px;
+}
+
+#close-image img {
+  display: block;
+  height: 120px;
+  width: 90px;
+}
+
+#header-image img {
+  display: block;
+  height: 50px;
+  width: 70px;
+  text-align: center;
+}
+
+p{
+  color: #fdf5e6;
+  font-size: 1.2em;
+  text-shadow: 0.1em 0.1em 0 #000000;
+}
+
+body {
+  background: url("./Resources/background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-color: #fdf5e6;
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: auto;
+}
+
+h1 {
+  display: inline-block;
+  font-family: "Righteous", serif;
+  text-shadow: 0.07em 0.07em 0 rgb(0, 0, 0);
+}
+
+.question {
+  text-align: center;
+  font-size: 1.4em;
+  color: #000000;
+  text-shadow: none;
+}
+
+.info {
+  text-align: center;
+  font-size: 1.6em;
+  color: #4caf50;
+  text-shadow: 0.1em 0.1em 0 #cddc39;
+}
+
+.link {
+  text-align: center;
+  font-size: 1.6em;
+  color: #234900;
+  text-shadow: 0.1em 0.1em 0 #ffffff;
+}
+
+.answer {
+  text-align: center;
+  font-size: 1.65em;
+  color: #ffffff;
+  text-shadow: 0.1em 0.1em 0 #626262;
+}
+
+.option {
+  text-align: center;
+  font-size: 1.3em;
+  color: rgb(255, 255, 255);
+  text-shadow: 0.1em 0.1em 0 #000000;
+}
+
+.menu-button {
+  text-align: center;
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+  text-shadow: 0.1em 0.1em 0 rgb(255, 255, 255);
+}
+
+.buttons {
+  text-align: center;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  text-align: center;
+  background-color: #cddc39;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  border: 4px groove #cddc39;
+  text-align: center;
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #4caf50;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "Righteous", serif;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.menu li:hover {
+  border: 4px groove #4caf50;
+  background-color: #cddc39;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+@media only screen and (min-width: 0px) {
+  .footer {
+    background-color: #cddc39;
+    color: #000000;
+    text-align: center;
+    font-family: "Righteous", serif;
+    font-size: 16px;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 760px) {
+  .footer {
+    background-color: #cddc39;
+    color: #000000;
+    text-align: center;
+    font-family: "Righteous", serif;
+    font-size: 16px;
+    padding: 15px;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+  }
+}
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
+
+.responsive {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}

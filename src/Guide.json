@@ -1,0 +1,47 @@
+{
+  "Type": "Q",
+  "Question": "¿El animal que usted encontró esta visualmente herido?",
+  "QuestionExplanation": "(EJM: Está fracturado, sangra o lleva horas sin moverse)",
+  "QuestionType": "2-Options",
+  "Child": [
+    {
+      "Type": "OP",
+      "Option": "Sí",
+      "OptionImage": "Resources/Yes.png",
+      "Child": [
+        {
+          "Type": "An",
+          "Title": "¿Qué debes hacer?",
+          "Subtitle": "¡Sigue estos consejos para el bien del animal!",
+          "AnswerType": "Advice-Number",
+          "Answer": "El animal debe ser trasladado a un centro de rescate para que reciba atención médico/veterinaria. Comuníquese a la oficina más cercana para solicitar ayuda o comuníquese con nosotros vía WhatsApp.",
+          "AnswerImage": "Resources/Sloth.jpg",
+          "Contacts": [
+            {
+              "Name": "SINAC",
+              "Description": "Comunicate vía teléfono con el SINAC o bien por los medios de comunicación del SINAC, ingresando al enlace a continuación.",
+              "Number": "2522-6500",
+              "WebPage": "http://www.sinac.go.cr/ES/contac/Paginas/default.aspx"
+            },
+            {
+              "Name": "Wildlife Rescue Center (ZooAve)",
+              "Description": "Número de Contacto WhatsApp del Rescue Center",
+              "Number": "6058-3898",
+              "WebPage": "https://www.rescatewildlife.org/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "OP",
+      "Option": "No",
+      "OptionImage": "Resources/No.png",
+      "Child": [
+        {
+          "Type": "Gui"
+        }
+      ]
+    }
+  ]
+}

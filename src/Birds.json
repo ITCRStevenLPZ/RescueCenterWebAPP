@@ -1,0 +1,130 @@
+{
+  "Type": "Q",
+  "Question": "¿Cómo es el Ave?",
+  "QuestionExplanation": "Selecciona la edad del ave",
+  "QuestionType": "3-Options",
+  "Child": [
+    {
+      "Type": "OP",
+      "Option": "No tiene plumas del todo o tiene muy pocas (es un Pichón)",
+      "OptionImage": "Resources/Bird/Pichon.png",
+      "Child": [
+        {
+          "Type": "Q",
+          "Question": "¿Puedes observar el nido?",
+          "QuestionExplanation": "¡Fíjate bien en las ramas y copas de los árboles!",
+          "QuestionType": "2-Options",
+          "Child": [
+            {
+              "Type": "OP",
+              "OptionImage": "Resources/No.png",
+              "Option": "No",
+              "Child": [
+                {
+                  "Type": "An",
+                  "AnswerType": "Advice-Extra",
+                  "Title": "¿Qué debes hacer?",
+                  "Subtitle": "¡Sigue estos consejos para el bien del ave!",
+                  "Answer": "Colóquelo dentro de una caja, y póngale una media rellena de arroz crudo y pasada por el microondas para brindarle calor, luego coloquelo lo más cerca posible de donde lo encontro",
+                  "Extra": "Mantenga una buena distancia, y dele tiempo a los padres para que regresen (pueden ser horas). Si el animal es nocturno como un Búho debes esperar hasta la noche.",
+                  "AnswerImage": "Resources/BirdBox.jpg"
+                }
+              ]
+            },
+            {
+              "Type": "OP",
+              "OptionImage": "Resources/Yes.png",
+              "Option": "Si",
+              "Child": [
+                {
+                  "Type": "An",
+                  "AnswerType": "Advice-Extra",
+                  "Title": "¿Qué debes hacer?",
+                  "Subtitle": "¡Sigue estos consejos para el bien del ave!",
+                  "Answer": "Devuélvelo al nido tomandolo con un trapo, sus padres no lo rechazarán.",
+                  "Extra": "Mantenga una buena distancia, y dele tiempo a los padres para que regresen (pueden ser horas). Si el animal es nocturno como un Búho debes esperar hasta la noche.",
+                  "AnswerImage": "Resources/ClothBird2.jpg"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "OP",
+      "Option": "Esta pequeño pero bien emplumado y revolotea. (Es un Volanton)",
+      "OptionImage": "Resources/Bird/Volanton.png",
+      "Extra": "Está aprendiendo a volar y es normal que caiga al suelo, sus papas estan cerca cuidandolo.",
+      "Child": [
+        {
+          "Type": "Q",
+          "Question": "¿Esta en un lugar peligroso?",
+          "QuestionExplanation": "¿Consideras que el ave está en peligro, o en un lugar en donde no debería estar?",
+          "QuestionType": "2-Options",
+          "Child": [
+            {
+              "Type": "OP",
+              "OptionImage": "Resources/Yes.png",
+              "Option": "Si",
+              "Child": [
+                {
+                  "Type": "An",
+                  "Title": "¿Qué debes hacer?",
+                  "Subtitle": "¡Sigue estos consejos para el bien del ave!",
+                  "AnswerType": "Advice",
+                  "Answer": "Tómelo con un trapo y pongalo en un lugar seguro cerca de donde fue encontrado.",
+                  "AnswerImage": "Resources/ClothBird.jpg"
+                }
+              ]
+            },
+            {
+              "Type": "OP",
+              "OptionImage": "Resources/No.png",
+              "Option": "No",
+              "Child": [
+                {
+                  "Type": "An",
+                  "Title": "¿Qué debes hacer?",
+                  "Subtitle": "¡Sigue estos consejos para el bien del ave!",
+                  "AnswerType": "Advice",
+                  "Answer": "Déjelo donde lo encontró. Es normal que caigan al suelo mientras aprenden a volar.",
+                  "AnswerImage": "Resources/LearningBird.jpg"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "OP",
+      "Option": "Es un adulto",
+      "OptionImage": "Resources/Bird/Adulto.png",
+      "Child": [
+        {
+          "Type": "An",
+          "Title": "¿Qué debes hacer?",
+          "Subtitle": "¡Sigue estos consejos para el bien del ave!",
+          "AnswerType": "Advice-Number",
+          "Answer": "Si es un adulto y no es capaz de volar, debe ser llevado a un centro de rescate. Comuníquese a la oficina SINAC más cercana para solicitar ayuda o comuníquese con nosotros vía WhatsApp",
+          "AnswerImage": "Resources/BrokenBird.jpg",
+          "Contacts": [
+            {
+              "Name": "SINAC",
+              "Description": "Comunicate vía teléfono con el SINAC o bien por los medios de comunicación del SINAC, ingresando al enlace a continuación.",
+              "Number": "2522-6500",
+              "WebPage": "http://www.sinac.go.cr/ES/contac/Paginas/default.aspx"
+            },
+            {
+              "Name": "Wildlife Rescue Center (ZooAve)",
+              "Description": "Número de Contacto WhatsApp del Rescue Center",
+              "Number": "6058-3898",
+              "WebPage": "https://www.rescatewildlife.org/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
