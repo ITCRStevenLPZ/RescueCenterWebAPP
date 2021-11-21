@@ -37,23 +37,25 @@ button {
   text-align: center;
 }
 
-p{
+p {
   color: #fdf5e6;
   font-size: 1.2em;
   text-shadow: 0.1em 0.1em 0 #000000;
 }
 
 body {
-  background: url("./Resources/background.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  background-color: #fdf5e6;
   width: 100%;
   height: 100%;
   display: block;
   margin: auto;
+}
+.body-form {
+  background: url("./Resources/background.png") no-repeat center center fixed
+    transparent;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
 }
 
 h1 {
@@ -87,7 +89,7 @@ h1 {
   text-align: center;
   font-size: 1.65em;
   color: #ffffff;
-  text-shadow: 0.1em 0.1em 0 #626262;
+  text-shadow: 0.1em 0.1em 0 #000000;
 }
 
 .option {

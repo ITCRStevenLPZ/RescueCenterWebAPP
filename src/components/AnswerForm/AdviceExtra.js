@@ -9,7 +9,7 @@ function AdviceExtra(props) {
   const childs = data.Child;
 
   return (
-    <body>
+    <body class = "body-form">
       <div class="row">
         <div class="col-s-12 col-s-12">
           <div class="question">

@@ -14,6 +14,7 @@ import AdviceExtra from "./components/AnswerForm/AdviceExtra";
 import AdviceNumber from "./components/AnswerForm/AdviceNumber";
 import { useState } from "react";
 import FormHeader from "./components/QuestionForm/FormHeader";
+import Login from "./components/Account/Login";
 
 const pads_es = [
   {
@@ -27,6 +28,11 @@ const pads_es = [
     description:
       "El Rescue Center cuenta con juegos para su plataforma educativa, ¡Disfruta de ellos!",
     buttonText: "¡Jugar!",
+  },
+  {
+    header: "Configuración",
+    description: "¡Si eres de la organización, ingresa acá!",
+    buttonText: "¡Iniciar Sesión!",
   },
 ];
 
@@ -83,7 +89,7 @@ const prueba = {
       WebPage: "http://www.sinac.go.cr/ES/contac/Paginas/default.aspx",
     },
     {
-      Name: "Wildlie Rescue Center (ZooAve)",
+      Name: "Wildlife Rescue Center (ZooAve)",
       Description: "Número de Contacto ZooAve",
       Number: "6058-3898",
       WebPage: "https://www.rescatewildlife.org/",
@@ -95,32 +101,30 @@ function App() {
   const mainMenu = [
     <div>
       <MenuRow>
-        <MenuHalf className={"w3-lime"} style={{ height: "750px" }}>
+        <MenuHalf className={"w3-lime"} style={{ height: "900px" }}>
           <MenuPad
             onPressedMenuButton={OnGuidePressedHandler}
             padData={pads_es[0]}
           ></MenuPad>
-          <MenuRow>
-            <div class="w3-half"></div>
-            <div class="w3-half"></div>
-          </MenuRow>
         </MenuHalf>
         <MenuHalf
-          className={"w3-white w3-container"}
-          style={{ height: "750px" }}
+          className={"w3-light-gray w3-container"}
+          style={{ height: "900px" }}
         >
           <MenuImagePad
             imagePadData={imagePads_es[0]}
             className="w3-center"
           ></MenuImagePad>
+          <MenuPad
+            onPressedMenuButton={OnGuidePressedHandler}
+            padData={pads_es[2]}
+          ></MenuPad>
         </MenuHalf>
         <MenuHalf
           className={"w3-green w3-container"}
-          style={{ height: "750px" }}
-        >
-          
-        </MenuHalf>
-        <MenuHalf className={"w3-sand"} style={{ height: "750px" }}>
+          style={{ height: "900px" }}
+        ></MenuHalf>
+        <MenuHalf className={"w3-sand"} style={{ height: "900px" }}>
           <MenuImagePad
             className="w3-center"
             imagePadData={imagePads_es[1]}
@@ -133,7 +137,10 @@ function App() {
       </MenuRow>
     </div>,
   ];
- //<GamePad gamePadData={gamePads_es[0]} className="w3-center"></GamePad>
+
+  const login_view = [<Login></Login>];
+
+  //<GamePad gamePadData={gamePads_es[0]} className="w3-center"></GamePad>
   const [onDisplay, setOnDisplay] = useState(mainMenu);
 
   function OnGuidePressedHandler() {

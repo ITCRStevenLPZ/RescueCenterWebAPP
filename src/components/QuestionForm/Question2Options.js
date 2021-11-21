@@ -19,7 +19,7 @@ function Question2Options(props) {
 
 
   return (
-    <body>
+    <body class = "body-form">
       <div class="row">
         <div class="col-s-12 col-s-12">
           <div class="question">
